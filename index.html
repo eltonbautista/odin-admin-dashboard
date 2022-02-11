@@ -7,9 +7,45 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
-    
+<!--
+    1. We will have a container that contains 2 columns (1fr 4fr) and 3 rows (2fr 6fr 1fr)
+    2. For the header we'll start by making it a grid that is 1 column long and 2 rows (1fr 1fr). We'll break the items up accordingly inside and turn each necessary item into a grid if needed. 
+    3. The sidebar will have 2 columns (1fr 3fr) and 3 rows (1fr 2fr 2fr);
 
-    
+-->
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <div class="header-top">
+                <div class="search-bar">Search</div>
+                <div class="user-profile">Profile</div>
+            </div>
+            <div class="header-bottom">
+                <div class="introduction">Introduction</div>
+                <div class="media">Media</div>
+            </div>
+        </header>
+
+        <div class="sidebar">
+                <div class="sidebar-image-one">Image 1</div>
+                <div class="sidebar-text-one">Dashboard</div>
+                <div class="sidebar-image-two">Image 2</div>
+                <div class="sidebar-text-two">Middle</div>
+                <div class="sidebar-image-three">Image 3</div>
+                <div class="sidebar-text-three">Bottom</div>
+        </div>
+
+        <div class="main">
+            <div>main placeholder</div>
+        </div>
+
+        <footer class="footer">
+            <div>footer placeholder</div>
+        </footer>
+
+    </div>
+
 </body>
 </html>

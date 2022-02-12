@@ -20,7 +20,7 @@
     background-color: rgb(175, 100, 250, 0.3);
   }
   img, picture, video, canvas, svg {
-    display: block;
+    display: inline;
     max-width: 100%;
   }
   input, button, textarea, select {
@@ -106,10 +106,13 @@
       column-gap: 15px;
       background: wheat;
   }
-  .main > div:first-child,
-  .main > div:nth-child(2) {
+  .main > h1, 
+  .main-smaller-grid > h1{
       align-self: center;
       margin-top: 15px;
+      font-size: 22px;
+      padding-left: 8px;
+      text-shadow: -3px -3px 3px rgba(255, 0, 0, 0.685), 0 0 1rem rgb(0, 81, 255);
   }
   .main-projects {
       display: grid;
@@ -125,8 +128,9 @@
   }
   .main-projects div p:first-child {
       font-size: 20px;
-      align-self: center;
       padding-top: 10px;
+      text-shadow: -3px -3px 3px rgba(255, 0, 0, 0.685), 0 0 1em rgb(255, 17, 0);
+      border-bottom: 0;
   }
 
   .main-smaller-grid {
@@ -136,6 +140,24 @@
   }
   .main-smaller-grid > div:nth-child(2) {
       margin-top: 22px
+  }
+  .main-smaller-grid > div:first-child {
+    display: grid;
+    padding: 20px 25px 20px 25px;
+  }
+  .main-smaller-grid > div:last-child {
+    display: grid;
+    padding: 20px 25px 20px 25px;
+  }
+
+  .main-smaller-grid > div:last-child div {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .main-smaller-grid >div:first-child p {
+    border: 0;
+    font-size: 0.8rem;
   }
 
 

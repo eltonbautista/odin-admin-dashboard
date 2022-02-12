@@ -7,6 +7,7 @@
   }
   * {
     margin: 0;
+    border: 1px solid blue;
   }
   html, body {
     height: 100%;
@@ -14,6 +15,9 @@
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    font-family: jost, sans-serif;
+    font-weight: 600;
+    background-color: rgb(175, 100, 250, 0.3);
   }
   img, picture, video, canvas, svg {
     display: block;
@@ -28,10 +32,16 @@
   #root, #__next {
     isolation: isolate;
   }
+  @font-face {
+	font-family: jost;
+	src: url(OpenType/Jost-300-Light.otf);
+}
 
   .container {
+      width: 100%;
+      height: 100%;
       display: grid;
-      grid-template: 2fr 6fr 1fr / 1fr 4fr;
+      grid-template: 2fr 6fr 50px / 1fr 4fr;
       grid-template-areas: 
       "sidebar header"
       "sidebar main"
@@ -58,22 +68,83 @@
   .sidebar {
       grid-area: sidebar;
       display: grid;
-      grid-template-rows: 1fr 4fr 4fr;
+      grid-template-rows: 1fr 3fr 4fr;
       grid-template-columns: 1fr 4fr;
-      row-gap: 50px;
-      column-gap: 15px;
+      row-gap: 40px;
+      column-gap: 5px;
       padding-left: 15px;
   }
+  .sidebar div {
+      display: grid;
+  }
+  .sidebar-image.three,
+  .sidebar-text.three {
+      margin-top: 10px;
+      padding-bottom: 240px;
+  }
+  .sidebar-image {
+      justify-self: center;
+  }
+  .sidebar-image,
+  .sidebar-text {
+      align-items: center;
+  }
+  .sidebar-text {
+      font-size: clamp(20px, 50%, 30px);
+  }
+  .sidebar-text.one {
+      font-size: 30px;
+  }
 
-
-
-
-
+/* MAIN */
 
   .main {
       grid-area: main;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: 1fr 10fr;
+      column-gap: 15px;
+      background: wheat;
+  }
+  .main > div:first-child,
+  .main > div:nth-child(2) {
+      align-self: center;
+      margin-top: 15px;
+  }
+  .main-projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+  }
+  .main-projects div {
+      display: grid;
+      padding: 10px;
+  }
+  .main-projects div p {
+      width: min(45ch, 65%);
+  }
+  .main-projects div p:first-child {
+      font-size: 20px;
+      align-self: center;
+      padding-top: 10px;
   }
 
+  .main-smaller-grid {
+      display: grid;
+      grid-template-rows: 1fr 30px 1fr;
+      gap: 20px;
+  }
+  .main-smaller-grid > div:nth-child(2) {
+      margin-top: 22px
+  }
+
+
+
+
+
+/* FOOTER */
   .footer {
       grid-area: footer;
+      justify-self: center;
+      align-self: center;
   }

@@ -211,6 +211,30 @@
       background: wheat;
       box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.425);
   }
+  .main a {
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    align-items: center;
+  }
+
+  .main a:hover {
+    color: rgba(0, 0, 0, 0.234);
+    text-shadow: 0 0 2px rgba(255, 0, 0, 0.685), 0 0 1em rgb(255, 17, 0);
+  }
+
+  .main img {
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+  }
+
+  .main-projects span {
+    font-size: 20px;
+    padding-top: 10px;
+    text-shadow: -1px -1px 3px rgba(255, 0, 0, 0.685), 0 0 1em rgb(255, 17, 0);
+  }
+
   .main > h1, 
   .main-smaller-grid > h1{
       align-self: center;
@@ -312,9 +336,18 @@
       display: grid;
       font-size: 1rem;
       justify-content: center;
-      text-shadow: 0.5px 0px 3px rgb(25, 0, 255), 0 0 1em rgb(255, 17, 0);
-      color: white;
+      align-items: center;
       background: #c31432;  /* fallback for old browsers */
       background: -webkit-linear-gradient(to bottom, #c31432, #240b3657);  /* Chrome 10-25, Safari 5.1-6 */
       background: linear-gradient(to bottom, #c31432, #240b3657); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  .footer a {
+    text-shadow: 0.5px -2px 0.3px rgb(255, 255, 255), 0 0 1em rgb(255, 17, 0);
+    color: rgba(245, 222, 179, 0.685);
+  }
+  .footer img {
+    width: 20px;
+    height: 20px;
+    padding-top: 2px;
   }

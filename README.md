@@ -2,7 +2,7 @@
 A project which utilizes my newfound knowledge of CSS Grid! 
 This will be the first of the many projects that I will be using CSS Grid for!
 
-![image](https://user-images.githubusercontent.com/94667178/153919144-696ab061-22c9-4aaa-8ff8-33694dc1363a.png)
+![image](https://user-images.githubusercontent.com/94667178/153927222-edc47889-ad2e-43cc-a53c-30bc00ccaa7a.png)
 
 [Live Preview](https://htmlpreview.github.io/?https://eltonbautista.github.io/odin-admin-dashboard/)
 
